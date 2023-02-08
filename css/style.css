@@ -70,6 +70,11 @@ main{
   position: relative;
   text-align: center;
   height: 100%;
+  padding: 1rem;
+}
+
+.side-bar .top{
+  width: 100%;
 }
 
 .side-bar .bottom{
@@ -81,7 +86,7 @@ main{
 
 .side-nav-list img,
 #logo{
-  width: 1.8rem;
+  width: 1.3rem;
 }
 
 .install-app img{
@@ -89,7 +94,11 @@ main{
 }
 
 .profile-name img{
-  width: 1.3rem;
+  width: 1.2rem;
+}
+
+.mobile-hidden{
+  display: none;
 }
 
 .content{
@@ -144,6 +153,19 @@ footer{
 
   .side-bar{
     width: 13rem;
+    text-align: left;
+  }
+
+  .mobile-hidden{
+    display: inline-block;
+  }
+
+  .side-playlist{
+    margin-top: 1rem;
+  }
+
+  .side-playlist i{
+    font-size: 2rem;
   }
 
   .content{
@@ -166,7 +188,7 @@ footer{
   .cover-item{
     width: 25%;
   }
-  
+
 }
 
 
