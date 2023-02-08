@@ -73,13 +73,23 @@ main{
 }
 
 .side-bar .bottom{
+  width: 100%;
   position: absolute;
   left:0;
   bottom: 0;
 }
 
-.side-bar img{
-  width: 60%;
+.side-nav-list img,
+#logo{
+  width: 1.8rem;
+}
+
+.install-app img{
+ width: 1rem;
+}
+
+.profile-name img{
+  width: 1.3rem;
 }
 
 .content{
