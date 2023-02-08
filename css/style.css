@@ -28,6 +28,13 @@
   height: 200px;
 }
 
+.debug .side-bar .top{
+  background-color: lightblue;
+}
+
+.debug .side-bar .bottom{
+  background-color: lightskyblue;
+}
 
 
 
@@ -60,6 +67,19 @@ main{
 
 .side-bar{
   width: 3.2rem;
+  position: relative;
+  text-align: center;
+  height: 100%;
+}
+
+.side-bar .bottom{
+  position: absolute;
+  left:0;
+  bottom: 0;
+}
+
+.side-bar img{
+  width: 60%;
 }
 
 .content{
