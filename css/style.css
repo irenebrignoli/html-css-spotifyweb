@@ -71,6 +71,7 @@ main{
   text-align: center;
   height: 100%;
   padding: 1rem;
+  overflow: hidden;
 }
 
 .side-bar .top{
@@ -147,6 +148,16 @@ footer{
 
 
 /* MEDIA QUERIES */
+
+/* small-height */
+@media screen and (max-height:350px){
+
+  .side-bar .bottom{
+    display: none;
+  }
+
+}
+
 
 /* small - da 576px */
 @media screen and (min-width:576px){
