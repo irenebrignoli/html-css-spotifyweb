@@ -3,3 +3,120 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --footer: #282828
+}
+
+
+/* DEBUG */
+
+.debug .side-bar{
+  background-color: cornflowerblue;
+}
+
+.debug .content{
+  background-color: aquamarine;
+}
+
+.debug .navbar{
+  background-color: green;
+}
+
+.debug .cover-container{
+  background-color: pink;
+  height: 200px;
+}
+
+
+
+
+/* COMMON */
+
+.flex{
+  display: flex;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.overflow{
+  overflow-y: auto;
+}
+
+
+/* OTHER */
+
+/* ----main */
+
+main{
+  height: calc(100vh - 6rem);
+}
+
+.side-bar{
+  width: 3.2rem;
+}
+
+.content{
+  width: calc(100% - 3.2rem);
+  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.cta{
+  position: fixed;
+  height: 5rem;
+  left: 3.2rem;
+  top: 0;
+  width: calc(100% - 3.2rem);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar{
+  margin-top: 5rem;
+}
+
+section{
+  padding-top: 2.5rem;
+}
+
+ul{
+  list-style: none;
+}
+
+.cover-list{
+  margin: 0 -0.5rem;
+}
+
+.cover-item{
+  padding: 0.5rem;
+  width: 50%;
+}
+
+
+/* ----footer */
+
+footer{
+  height: 6rem;
+  background-color: var(--footer);
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+/* small - da 576px */
+
+
+/* medium - da 768px */
+
+
+/* large - da 992px */
+
+
+
