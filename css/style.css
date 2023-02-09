@@ -139,7 +139,6 @@ main{
 
 .side-bar .bottom{
   gap: 0.5rem;
-  width: 100%;
 }
 
 .side-nav-list img,
@@ -306,6 +305,11 @@ footer > div{
     padding: 0.3rem 1rem;
   }
 
+  .side-bar img,
+  .side-bar i{
+    margin-right: 0.5rem;
+  }
+
   .mobile-hidden{
     display: flex;
   }
@@ -346,12 +350,17 @@ footer > div{
     gap: 0.7rem;
   }
 
+  .side-bar .bottom{
+    width: 100%;
+  }
+
   .side-bar hr{
     border: none;
     border-top: 0.5px solid var(--grey);
   }
 
   .profile-name span{
+    margin-left: 0.5rem;
     font-size: 0.7rem;
     font-weight: 600;
     color: var(--white-color);
