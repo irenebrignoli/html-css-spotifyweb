@@ -22,9 +22,6 @@ html{
 /* DEBUG */
 
 
-.debug .navbar{
-  background-color: green;
-}
 
 .debug .cover-container{
   background-color: pink;
@@ -61,6 +58,10 @@ html{
   margin-right: 0.5rem;
 }
 
+.p-top2{
+  padding-top: 2rem;
+}
+
 .overflow-s{
   overflow-y: auto;
 }
@@ -76,6 +77,14 @@ html{
 h3{
   font-size: 0.8rem;
   color: var(--white-color);
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 
@@ -160,18 +169,48 @@ main{
   top: 0;
   width: calc(100% - 3.2rem);
   background-color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+}
+
+.cta-btn{
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--white-color);
+  padding: 0.5rem 2rem;
+  border: var(--white-color) 1px solid;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 1.5rem 1.5rem;
 }
 
 .navbar{
   margin-top: 5rem;
 }
 
-section{
-  padding-top: 2.5rem;
+.navbar ul{
+  gap: 1.5rem;
 }
 
-ul{
-  list-style: none;
+.navbar li{
+  font-size: 0.7rem;
+  font-weight: 600;
+  position: relative;
+  padding: 0.3rem 0;
+}
+
+.navbar a{
+  display: inline-block;
+  color: var(--grey);
+}
+
+.border-btm-green:after{
+  content: "";
+  position: absolute;
+  border-bottom: var(--selected) 2px solid;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 2px;
+  width: 40%;
 }
 
 .cover-list{
@@ -264,7 +303,6 @@ footer{
     left: 13rem;
     top: 0;
     width: calc(100% - 13rem);
-    background-color: rgba(0, 0, 0, 0.5);
   }
   
 }
