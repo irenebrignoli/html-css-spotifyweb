@@ -159,7 +159,7 @@ footer{
   }
 
   .mobile-hidden{
-    display: inline-block;
+    display: flex;
   }
 
   .side-playlist{
