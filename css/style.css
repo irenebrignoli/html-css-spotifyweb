@@ -22,16 +22,6 @@ html{
 /* DEBUG */
 
 
-
-.debug .cover-container{
-  background-color: pink;
-  height: 200px;
-}
-
-
-
-
-
 /* COMMON */
 
 .flex{
@@ -58,10 +48,6 @@ html{
   margin-right: 0.5rem;
 }
 
-.p-top2{
-  padding-top: 2rem;
-}
-
 .overflow-s{
   overflow-y: auto;
 }
@@ -74,9 +60,20 @@ html{
   text-transform: uppercase;
 }
 
+h2{
+  font-size: 1.3rem;
+}
+
 h3{
   font-size: 0.8rem;
   color: var(--white-color);
+}
+
+h4{
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--grey);
+  margin-top: 0.4rem;
 }
 
 ul{
@@ -96,6 +93,9 @@ main{
   height: calc(100vh - 6rem);
   min-height: 20rem;
 }
+
+
+/* ----aside */
 
 .side-bar{
   width: 3.2rem;
@@ -156,6 +156,9 @@ main{
   display: none;
 }
 
+
+/* ----content */
+
 .content{
   width: calc(100% - 3.2rem);
   padding: 0 1.25rem 1.25rem 1.25rem;
@@ -213,6 +216,18 @@ main{
   width: 40%;
 }
 
+
+/* ----sections */
+
+section{
+  color: var(--white-color);
+  padding-top: 2rem;
+}
+
+section h2{
+  margin-bottom: 1rem;
+}
+
 .cover-list{
   margin: 0 -0.5rem;
 }
@@ -220,6 +235,15 @@ main{
 .cover-item{
   padding: 0.5rem;
   width: 50%;
+}
+
+.cover-container img{
+  width: 100%;
+}
+
+.cover-text{
+  text-align: center;
+  margin: 0.5rem 0;
 }
 
 
