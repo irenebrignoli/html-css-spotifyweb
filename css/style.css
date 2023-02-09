@@ -76,6 +76,11 @@ h4{
   margin-top: 0.4rem;
 }
 
+h5{
+  font-size: 0.6rem;
+  color: var(--grey);
+}
+
 ul{
   list-style: none;
 }
@@ -252,6 +257,7 @@ section h2{
 footer{
   height: 6rem;
   background-color: var(--footer);
+  padding: 1.5rem 0.6rem;
 }
 
 
