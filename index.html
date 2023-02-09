@@ -14,25 +14,29 @@
 
 <body class="debug">
 
-  <main class="flex">
+  <main class="flex overflow-h">
 
     <!-- ASIDE -->
-    <aside class="side-bar">
+    <aside class="side-bar flex direction-column">
 
-      <div class="top">
+      <div class="top flex direction-column overflow-h">
         <div>
           <img id="logo" src="img/logo-small.svg" alt="logo Spotify"> <span class="mobile-hidden">Spotify</span>
         </div>
         
-        <ul class="side-nav-list">
+        <!-- side-nav-list -->
+        <ul class="side-nav-list  flex direction-column">
           <li><img src="img/home.svg" alt="home"> <span class="mobile-hidden">Home</span></li>
           <li><img src="img/search.svg" alt="search"><span class="mobile-hidden">Cerca</span></li>
           <li><img src="img/libreria.svg" alt="library"><span class="mobile-hidden">La tua libreria</span></li>
         </ul>
 
-        <div class="mobile-hidden side-playlist">
+        <!-- side-playlist -->
+        <div class="side-playlist mobile-hidden flex direction-column overflow-h">
           <i class="fa-solid fa-square-plus"></i> <span>Crea Playlist </span>
-          <ul>
+          <ul class="flex direction-column overflow-s">
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
@@ -55,7 +59,7 @@
     </aside>
 
     <!-- CONTENT -->
-    <div class="content overflow">
+    <div class="content overflow-s">
 
       <div class="cta"></div>
       
