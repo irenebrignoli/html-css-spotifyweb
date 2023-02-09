@@ -10,7 +10,12 @@
   --grey: #a3a3a3;
   --content: #141922;
   --selected: #adff2f;
+  --white-color: #fff;
 
+}
+
+html{
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -44,6 +49,10 @@
   justify-content: center;
 }
 
+.align-center{
+  align-items: center;
+}
+
 .direction-column{
   flex-direction: column;
 }
@@ -52,12 +61,25 @@
   flex-wrap: wrap;
 }
 
+.mr-05{
+  margin-right: 0.5rem;
+}
+
 .overflow-s{
   overflow-y: auto;
 }
 
 .overflow-h{
   overflow-y: hidden;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 0.8rem;
+  color: var(--white-color);
 }
 
 
@@ -75,24 +97,13 @@ main{
   align-items: center;
   padding: 0.3rem;
   background-color: var(--dark);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color:var(--grey);
 }
 
 .side-bar .top{
   height: calc(100% - 6rem);
-}
-
-.logo{
-  margin-bottom: 0.2rem;
-}
-
-.side-nav-list,
-.side-bar .bottom{
-  gap: 0.2rem;
-}
-
-.side-nav-list img,
-.logo img{
-  width: 1.3rem;
 }
 
 .side-bar .bottom{
@@ -100,11 +111,29 @@ main{
   justify-content: flex-end;
 }
 
+.logo{
+  margin-bottom: 0.2rem;
+}
+
+.side-nav-list{
+  gap: 0.2rem;
+}
+
+.side-bar .bottom{
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.side-nav-list img,
+.logo img{
+  width: 1.3rem;
+}
+
 .install-app img{
  width: 1rem;
 }
 
-.profile-name{
+.profile-name > div{
   width: 1.2rem;
   height: 1.2rem;
   background-color: var(--grey);
@@ -175,18 +204,52 @@ footer{
 
   .side-bar{
     width: 13rem;
+    align-items: flex-start;
+    padding: 0.3rem 1rem;
   }
 
   .mobile-hidden{
     display: flex;
   }
 
-  .side-playlist{
-    margin-top: 1rem;
+  .logo,
+  .side-nav-list li,
+  .make-playlist,
+  .install-app,
+  .profile-name{
+    display: flex;
+    align-items: center;
   }
 
-  .side-playlist i{
+  .logo{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: var(--white-color);
+  }
+
+  .logo img{
+    width: 2rem;
+  }
+
+  .side-nav-list{
+    margin-bottom: 1.5rem;
+  }
+  
+  .make-playlist{
+    margin: 0.5rem 0;
+  }
+
+  .make-playlist i{
     font-size: 2rem;
+  }
+
+  .side-playlist ul{
+    gap: 0.7rem;
+  }
+
+  .side-bar hr{
+    border: none;
+    border-top: 0.5px solid var(--grey);
   }
 
   .content{

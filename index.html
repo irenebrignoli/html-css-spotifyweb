@@ -8,6 +8,10 @@
   <!-- font awsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- font open sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- style -->
   <link rel="stylesheet" href="css/style.css">
   <title>Spotify Web</title>
 </head>
@@ -22,19 +26,26 @@
       <!-- top bar -->
       <div class="top flex direction-column overflow-h">
         <div class="logo">
-          <img src="img/logo-small.svg" alt="logo Spotify"> <span class="mobile-hidden">Spotify</span>
+          <img class="mr-05" src="img/logo-small.svg" alt="logo Spotify"> <span class="mobile-hidden">Spotify</span>
         </div>
         
         <!-- side-nav-list -->
         <ul class="side-nav-list flex direction-column">
-          <li><img src="img/home.svg" alt="home"> <span class="mobile-hidden">Home</span></li>
-          <li><img src="img/search.svg" alt="search"><span class="mobile-hidden">Cerca</span></li>
-          <li><img src="img/libreria.svg" alt="library"><span class="mobile-hidden">La tua libreria</span></li>
+
+          <li><img class="mr-05" src="img/home.svg" alt="home"> <span class="mobile-hidden">Home</span></li>
+
+          <li><img class="mr-05" src="img/search.svg" alt="search"><span class="mobile-hidden">Cerca</span></li>
+
+          <li><img class="mr-05" src="img/libreria.svg" alt="library"><span class="mobile-hidden">La tua libreria</span></li>
         </ul>
 
         <!-- side-playlist -->
         <div class="side-playlist mobile-hidden flex direction-column overflow-h">
-          <i class="fa-solid fa-square-plus"></i> <span>Crea Playlist </span>
+          <h3 class="uppercase">Playlist</h3>
+          <div class="make-playlist">
+            <i class="fa-solid fa-square-plus mr-05"></i> <span>Crea Playlist </span>
+          </div>
+          
           <ul class="flex direction-column overflow-s">
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
@@ -51,10 +62,16 @@
       <!-- bottom bar -->
       <div class="bottom flex direction-column">
         <div class="install-app">
-          <img src="img/download.svg" alt="download app"> <span class="mobile-hidden">install-app</span>
+          <img class="mr-05" src="img/download.svg" alt="download app"> <span class="mobile-hidden">Install app</span>
         </div>
-        <div class="profile-name">
-          <img src="img/profile.svg" alt="profile image"><span class="mobile-hidden">John Doe</span>
+
+        <hr class="mobile-hidden"/>
+
+        <div class="profile-name mr-05">
+          <div class="mr-05">
+            <img src="img/profile.svg" alt="profile image">
+          </div>
+          <span class="mobile-hidden">John Doe</span>
         </div>
       </div>
       
