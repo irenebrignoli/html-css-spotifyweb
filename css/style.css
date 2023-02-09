@@ -22,10 +22,6 @@ html{
 /* DEBUG */
 
 
-.debug .content{
-  background-color: aquamarine;
-}
-
 .debug .navbar{
   background-color: green;
 }
@@ -154,6 +150,7 @@ main{
 .content{
   width: calc(100% - 3.2rem);
   padding: 0 1.25rem 1.25rem 1.25rem;
+  background-color: var(--content);
 }
 
 .cta{
@@ -236,6 +233,7 @@ footer{
   }
   
   .make-playlist{
+    font-size: 0.7rem;
     margin: 0.5rem 0;
   }
 
@@ -250,6 +248,12 @@ footer{
   .side-bar hr{
     border: none;
     border-top: 0.5px solid var(--grey);
+  }
+
+  .profile-name span{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--white-color);
   }
 
   .content{
