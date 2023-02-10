@@ -83,7 +83,8 @@
       <div class="cta">
         <a class="cta-btn uppercase" href="#">Effettua l'upgrade</a>
       </div>
-      
+
+      <!-- navbar -->
       <nav class="navbar">
         <ul class="flex wrap justify-center">
           <li class="border-btm-green"><a class="uppercase" href="#">In evidenza</a></li>
@@ -228,36 +229,54 @@
 
   <!-- FOOTER -->
 
-  <footer class="flex">
+  <footer class="flex space-between">
 
     <!-- f-left -->
-    <div class="f-left flex align-center">
-      <img class="mr-05" src="img/sinister.jpeg" alt="Sinister">
-      <div>
-        <h4>Sinister</h4>
-        <h5>Brano Nome</h5>
+    <div class="player-album flex align-center space-between">
+
+      <div class="footer-album-cover flex align-center">
+        <img class="mr-05" src="img/sinister.jpeg" alt="Sinister">
+        <div class="mr-05">
+          <h4>Sinister</h4>
+          <h5>Brano Nome</h5>
+        </div>
       </div>
 
-      <div class="f-left-icons">
+      <div class="player-album-icons">
         <i class="mr-05 fa-regular fa-heart"></i>
         <i class="fa-regular fa-folder"></i>
       </div>
     </div>
 
     <!-- f-center -->
-    <div class="f-center">
-      <div class="player-buttons">
+    <div class="player-controls flex direction-column justify-center">
 
+      <div class="player-controls-commands flex justify-center align-center">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="play fa-regular fa-circle-play"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-rotate-right"></i>
       </div>
 
-      <div class="progress-bar">
+      <div class="song-lenght flex align-center">
+
+        <div class="time-elapse">0:25</div>
+
+        <div class="progress-bar w-80">
+          <div class="bar">
+            <div class="percent "></div>
+          </div>
+        </div>
+
+        <div class="time-remained">4:35</div>
 
       </div>
 
     </div>
 
     <!-- f-right -->
-    <div class="f-right"></div>
+    <div class="player-audio"></div>
 
   </footer>
   

@@ -8,6 +8,7 @@
   --footer: #282828;
   --dark: #000;
   --grey: #a3a3a3;
+  --grey-darker: #5a5a5a;
   --content: #141922;
   --selected: #adff2f;
   --white-color: #fff;
@@ -53,6 +54,10 @@ html{
 
 .mr-05{
   margin-right: 0.5rem;
+}
+
+.w-80{
+  width: 80%;
 }
 
 .overflow-s{
@@ -272,30 +277,76 @@ footer{
   gap: 0.7rem;
 }
 
-footer > div{
-  width: calc(100% / 3);
+.player-album,
+.player-audio{
+  width: 190px;
+}
+
+.player-controls{
+  width: 40%;
+}
+
+.footer-album-cover{
   height: 100%;
 }
 
-.f-left img{
-  height: 60%;
+.footer-album-cover img{
+  height: 100%;
 }
 
-.f-left h4{
+.player-album h4{
   color: var(--white-color);
   font-weight: 600;
   margin: 0;
 }
 
-.f-left-icons i{
+.player-album-icons i{
   display: inline-block;
   font-size: 0.8rem;
   color: var(--grey);
 }
 
-.f-left-icons{
-  margin-left: 0.8rem;
+.player-controls{
+  color: var(--white-color);
+  gap: 0.5rem;
 }
+
+.player-controls-commands{
+  gap: 1rem;
+}
+
+.player-controls-commands .play{
+  font-size: 1.5rem;
+}
+
+.time-elapse,
+.time-remained{
+  width: 20%;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.progress-bar{
+  gap: 0.5rem;
+}
+
+.progress-bar .bar{
+  height: 0.2rem;
+  border-radius: 0.2rem;
+  background-color:var(--grey-darker);
+}
+
+.progress-bar .percent{
+  height: 100%;
+  width: 30%;
+  border-radius: 0.2rem;
+  background-color: var(--grey);
+}
+
+
+
+
 
 /* MEDIA QUERIES */
 
