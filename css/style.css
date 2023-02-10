@@ -12,7 +12,6 @@
   --content: #141922;
   --selected: #adff2f;
   --white-color: #fff;
-
 }
 
 html{
@@ -29,6 +28,7 @@ body{
 
 
 /* COMMON */
+
 
 .flex{
   display: flex;
@@ -200,6 +200,7 @@ main{
   width: calc(100% - 3.2rem);
   background-color: rgba(0, 0, 0, 0.5);
   text-align: right;
+  z-index: 99;
 }
 
 .cta-btn{
@@ -211,6 +212,11 @@ main{
   border-radius: 50px;
   display: inline-block;
   margin: 1.5rem 1.5rem;
+  transition: all 0.5s;
+}
+
+.cta-btn:hover{
+  transform: scale(1.1, 1.1);
 }
 
 .navbar{
@@ -231,6 +237,11 @@ main{
 .navbar a{
   display: inline-block;
   color: var(--grey);
+}
+
+.navbar a:hover{
+  display: inline-block;
+  color: var(--white-color);
 }
 
 .border-btm-green:after{
@@ -264,8 +275,39 @@ section h2{
   width: 50%;
 }
 
+.cover-container{
+  position: relative;
+}
+
 .cover-container img{
   width: 100%;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.overlay .play{
+  font-size: 2.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-rounded{
+  border-radius: 50%;
+}
+
+.cover-item:hover .overlay{
+  display: block;
+  cursor: pointer;
 }
 
 .cover-text{
@@ -289,10 +331,12 @@ footer{
 
 .player-album{
   width: 100%;
+  gap: 1rem;
 }
 
 .footer-album-cover{
   height: 100%;
+  width: 100px;
 }
 
 .footer-album-cover img{
@@ -305,7 +349,66 @@ footer{
   margin: 0;
 }
 
+.player-album h5:hover{
+  color: var(--white-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.mobile-first.song-lenght{
+  width: 35%;
+  gap: 0.5rem;
+}
+
+.time-elapse,
+.time-remained{
+  color: var(--white-color);
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.progress-bar{
+  width: 100%;
+}
+
+.progress-bar .bar{
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 0.2rem;
+  background-color:var(--grey-darker);
+}
+
+.progress-bar .percent{
+  height: 100%;
+  width: 30%;
+  border-radius: 0.2rem;
+  background-color: var(--grey);
+  position: relative;
+}
+
+.progress-bar:hover .percent{
+  cursor: pointer;
+  background-color: var(--selected);
+}
+
+.percent-state{
+  position: absolute;
+  right: 0;
+  top: -0.2rem;
+  height: 0.7rem;
+  width: 0.7rem;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: none;
+}
+
+.progress-bar:hover .percent-state{
+  display: block;
+}
+
 .player-album-icons{
+  width: 100px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -313,11 +416,15 @@ footer{
   color: var(--grey);
 }
 
+.player-album-icons i:hover{
+  color: var(--white-color);
+  cursor: pointer;
+}
+
 .player-album-icons .play{
   font-size: 1.8rem;
   color: var(--white-color);
-  margin-left: 1rem;
-  margin-right: 2rem;
+  margin-left: 0.5rem;
 }
 
 
@@ -367,6 +474,11 @@ footer{
     margin-bottom: 1.5rem;
   }
 
+  .side-nav-list li:hover{
+    cursor: pointer;
+    color: var(--white-color);
+  }
+
   .border-left-green:before{
     content: "";
     position: absolute;
@@ -390,8 +502,20 @@ footer{
     gap: 0.7rem;
   }
 
+  .side-playlist li:hover,
+  .make-playlist:hover{
+    cursor: pointer;
+    color: var(--white-color);
+  }
+
   .side-bar .bottom{
     width: 100%;
+  }
+
+  .side-bar .bottom .install-app:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--white-color);
   }
 
   .side-bar hr{
@@ -418,15 +542,18 @@ footer{
 
   /* ----footer */
 
+  .mobile-first.song-lenght{
+    display: none;
+  }
+
   .player-album,
   .player-audio{
     width: 190px;
+    gap: 0.5rem;
   }
 
-  .player-album-icons i{
-    display: inline-block;
-    font-size: 0.8rem;
-    color: var(--grey);
+  .footer-album-cover{
+    width: auto;
   }
 
   .player-album-icons .play{
@@ -450,32 +577,23 @@ footer{
   .player-controls-commands .play{
     font-size: 1.5rem;
   }
-  
+
+  .player-controls-commands .play:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
   .time-elapse,
   .time-remained{
     width: 20%;
     text-align: center;
-    font-size: 0.6rem;
-    font-weight: 600;
   }
   
   .progress-bar{
     gap: 0.5rem;
+    width: 100%;
   }
-  
-  .progress-bar .bar{
-    height: 0.2rem;
-    border-radius: 0.2rem;
-    background-color:var(--grey-darker);
-  }
-  
-  .progress-bar .percent{
-    height: 100%;
-    width: 30%;
-    border-radius: 0.2rem;
-    background-color: var(--grey);
-  }
-  
+
   .player-audio{
     color: var(--white-color);
     font-size: 0.7rem;
