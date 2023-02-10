@@ -26,9 +26,7 @@ body{
 
 /* DEBUG */
 
-.debug footer > div{
-  border: #fff 1px solid;
-}
+
 
 /* COMMON */
 
@@ -289,13 +287,8 @@ footer{
   gap: 0.7rem;
 }
 
-.player-album,
-.player-audio{
-  width: 190px;
-}
-
-.player-controls{
-  width: 40%;
+.player-album{
+  width: 100%;
 }
 
 .footer-album-cover{
@@ -312,13 +305,20 @@ footer{
   margin: 0;
 }
 
-.player-album-icons i{
-  display: inline-block;
-  font-size: 0.8rem;
+.player-album-icons{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
   color: var(--grey);
 }
 
-
+.player-album-icons .play{
+  font-size: 1.8rem;
+  color: var(--white-color);
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
 
 
 
@@ -405,11 +405,31 @@ footer{
     width: calc(100% - 13rem);
   }
 
+  .player-album,
+  .player-audio{
+    width: 190px;
+  }
+
+  .player-album-icons i{
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--grey);
+  }
+
+  .player-album-icons .play{
+    font-size: 1.8rem;
+    color: var(--white-color);
+    margin-left: 1rem;
+    display: none;
+  }
+
   .player-controls{
+    width: 40%;
     color: var(--white-color);
     gap: 0.5rem;
+    
   }
-  
+
   .player-controls-commands{
     gap: 1rem;
   }
@@ -463,6 +483,11 @@ footer{
 
   .cover-item{
     width: 25%;
+  }
+
+  .player-album,
+  .player-audio{
+    width: 250px;
   }
 
 }
