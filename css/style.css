@@ -431,6 +431,18 @@ footer{
 
 /* MEDIA QUERIES */
 
+/* height - h max 350px */
+@media screen and (max-height:350px){
+
+  .cta{
+    display: none;
+  }
+
+  .navbar{
+    margin-top: 2rem;
+  }
+
+}
 
 /* small - da 576px */
 @media screen and (min-width:576px){
