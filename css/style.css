@@ -332,6 +332,7 @@ footer{
     width: 13rem;
     align-items: flex-start;
     padding: 0.3rem 1rem;
+    position: relative;
   }
 
   .side-bar img,
@@ -364,6 +365,16 @@ footer{
 
   .side-nav-list{
     margin-bottom: 1.5rem;
+  }
+
+  .border-left-green:before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 2px;
+    background-color: var(--selected);
+    top: 50px;
+    left:0;
   }
   
   .make-playlist{
@@ -404,6 +415,8 @@ footer{
     top: 0;
     width: calc(100% - 13rem);
   }
+
+  /* ----footer */
 
   .player-album,
   .player-audio{
